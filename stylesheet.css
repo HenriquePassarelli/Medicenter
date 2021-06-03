@@ -1,0 +1,593 @@
+
+:root
+{
+    --nav-background :rgb(5, 87, 76);
+    --primary-color :rgb(146, 253, 200);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background-color: rgb(146, 253, 200);
+
+}
+
+/* Navigation */
+.navigation 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:1rem 1rem 1rem .8rem ;
+}
+.navigation .logo
+{
+    display: flex;
+    align-items: center;
+}
+.logo img
+{
+    height:3rem;
+}
+.logo h2
+{
+    margin-left: 0.4rem;
+}
+nav a
+{
+    font-size: 1.1rem;
+    color: black;
+
+    text-decoration: none;
+    margin: 0 0 0.5rem;
+    padding:.5rem;
+}
+nav a:hover
+{
+    background:var(--nav-background);
+    color: white;
+}
+nav a:first-child
+{
+    background:var(--nav-background);
+    color: white;
+}
+nav a:first-child:hover
+{
+    opacity: .85;
+}
+
+
+/* label content */
+.back_header
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.back_header img
+{
+    display:flex;
+    width:100%;
+    height:89vh;
+    object-fit: cover;
+}
+.header_text
+{
+    font-size: 1.5rem;
+    position: absolute;
+    margin: 4.5rem 0 0 8rem ;
+
+}
+.header_content
+{
+    display: flex;
+    position: absolute; 
+    font-size: small;
+}
+.header_content div
+{
+    width: 17rem;
+    height:9rem;
+}
+.header_content h3
+{
+    padding-bottom: .5rem;
+}
+.header_content .read_more
+{
+    position: absolute;
+    text-decoration: none;
+
+    border: .2rem solid var(--nav-background);
+    color: var(--nav-background);
+
+    padding:.2rem;
+    margin-top: .5rem;
+
+}
+.header_content .read_more:hover
+{
+    background:var(--nav-background);
+    color: white;
+}
+.header_content .inform01 
+{
+    padding: 1rem;
+    background:rgb(59, 238, 98);
+}
+.header_content .inform02
+{
+    padding: 1rem;
+    background: rgb(52, 216, 87);;
+}
+.header_content .inform03
+{
+    padding: 1rem;
+    background: rgb(11, 168, 45);
+}
+
+.header_content .inform03 .data
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    width: 100%;
+    height:2rem;
+}
+
+.header_content .inform03 .row
+{
+    width: 100%;
+    height:.1rem;
+
+    background:var(--nav-background);
+}
+
+/* main */
+main
+{
+    display: flex;
+    background-color:white;
+    padding: 3rem 0 0 3rem;
+}
+#news
+{
+    width: 67%;
+}
+
+.latest_news
+{
+    width: 12rem;
+    margin-left: 0.5rem;
+}
+.row_news{
+    width: 20%;
+    height:.2rem;
+    background:var(--nav-background);
+}
+
+/* news */
+
+.container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding:0.5rem;
+}
+
+
+.container .news
+{
+    margin:1rem 2rem .8rem 0 ;
+    width:21.875rem;
+
+}
+.news img
+{
+    margin-top: 1rem;
+    width:100%;
+}
+.news p{
+    font-size:.8rem;
+}
+.post_date
+{
+    background:var(--nav-background);
+    color: white;
+    padding:.3rem;
+    margin-bottom: .5rem;
+}
+.post_ord
+{
+    background: rgb(11, 168, 45);    
+    padding:.3rem .4rem;
+    text-decoration: none;
+    color: white;
+}
+.open_news
+{
+    text-decoration: none;
+    color:black;
+}
+.open_news :hover
+{
+    opacity: 0.8;
+}
+.read
+{
+    text-decoration: none;
+    color: var(--nav-background);
+}
+.older
+{
+    display: flex;
+    font-size: .8rem;
+    text-decoration: none;
+    color: var(--nav-background);
+    justify-content:flex-end;
+    margin-right: 2rem;
+    padding:.5rem;
+}
+/* aside */
+
+.list
+{
+    margin: 1rem 0 1.5rem 0;
+    color: rgb(144, 136, 136);
+}
+.list ul li
+{
+    list-style: none;
+    padding:.5rem 0 .5rem;
+    cursor: pointer;
+}
+.list ul li :hover
+{
+    color: var(--nav-background);
+}
+.list ul li h4
+{
+    display: flex;
+    justify-content:space-between;
+}
+.list ul li h4::after
+{
+    display: flex;
+    content: "+";
+}
+.row_depart
+{
+    background:rgb(224, 223, 223);
+    width: 100%;
+    height:.1rem;
+}
+
+
+/* appointment */
+
+table
+{
+    margin-top: 1rem;
+    color: gray;
+    font-size: .8rem;
+}
+table svg
+{
+    width: 1.1rem;
+    fill:gray;
+}
+tbody tr:nth-child(odd)
+{
+    background-color: rgb(238, 238, 238);
+}
+
+td
+{
+    padding-left: .8rem;
+}
+.icon
+{
+    padding: .8rem 1.7rem;
+    align-items: center;
+}
+
+/* footer */
+
+footer
+{
+    width: 100%;
+    position: absolute;
+    background:rgb(46, 46, 46);
+    color: white;
+}
+/* label */
+.footer_content
+{
+    display: flex;
+    justify-content: center;
+    text-align:end;
+    color:whitesmoke;
+}
+.footer_content div
+{
+    width: 20rem;
+    height:5rem;    
+}
+.footer_content svg
+{
+    display: flex;
+    fill: whitesmoke;
+    width:3rem;
+    margin-top: 1rem;
+}
+.footer_content h2 , .footer_content h5
+{
+    padding-bottom: .5rem;
+    font-weight: 300;
+}
+
+.footer_content .inform01 ,.footer_content .inform02,.footer_content .inform03
+{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+}
+.footer_content .inform_svg
+{
+    width:3rem;
+}
+.footer_content .inform_h
+{
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.footer_content .inform_h h2:hover
+{
+    cursor: pointer;
+    opacity:0.8;
+}
+.footer_content .inform01 
+{
+    background:rgb(59, 238, 98);
+}
+.footer_content .inform02
+{
+    background: rgb(52, 216, 87);
+}
+.footer_content .inform03
+{
+    background: rgb(11, 168, 45);
+}
+
+/* about us */
+
+.footer_container
+{
+    display: flex;
+}
+.about 
+{
+    margin:3rem 0 5rem 4rem ;
+    width: 25%;
+}
+.about .row_footer
+{
+    width:10%;
+    height:.3rem;
+    background:var(--primary-color);
+}
+.about ul
+{
+    margin-top: 1rem;
+}
+.about li
+{
+    font-size:.8rem;
+    list-style: none;
+}
+.about .gray
+{
+    color: rgb(177, 173, 173);
+
+}
+.about svg
+{
+    fill: rgb(177, 173, 173);
+
+    padding: 0 1rem 0 0 ;
+    width: 1.2rem;
+}
+.about .second
+{
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+}
+.about .under a
+{
+    text-decoration: none;
+    color:whitesmoke;
+}
+.about .under a:hover
+{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+/* additional  */
+.add .row_footer
+{
+    width:10%;
+    height:.3rem;
+    background:var(--primary-color);
+}
+.add
+{
+    margin:3rem 0 5rem 2rem ;
+    width: 25%;
+}
+.add ul
+{
+    columns: 2;
+    margin-top: 1rem;
+    line-height: 2rem;
+    font-size:.8rem;
+}
+.add li
+{
+    cursor: pointer;
+    list-style: none;
+}
+.add li:hover
+{
+    text-decoration: underline;
+}
+.add li::before
+{
+    content:">";
+    margin-right: .5rem;
+}
+
+
+/* Last post footer */
+
+.lposts
+{
+    margin:3rem 0 5rem 1rem ;
+    width: 25%;
+}
+.lposts .row_footer
+{
+    width:10%;
+    height:.3rem;
+    background:var(--primary-color);
+}
+.lposts ul
+{
+    list-style: none;
+    font-size:.8rem;
+
+}
+.lposts ul li
+{
+    margin-top: 1rem;
+}
+.lposts .lposts_date
+{
+    margin-top: .5rem;
+
+    color:rgb(129, 127, 127) ;
+}
+.lposts li a
+{
+    text-decoration:none;
+    color: whitesmoke;
+}
+.lposts li a:hover
+{
+    text-decoration: underline;
+}
+
+
+
+
+/* last tweets */
+.ltweets
+{
+    margin:3rem 0 5rem 1rem ;
+    width: 25%;
+}
+.ltweets .row_footer
+{
+    width:10%;
+    height:.3rem;
+    background:var(--primary-color);
+}
+
+.ltweets ul
+{
+    margin-top: 1rem;
+    list-style: none;
+    font-size:0.8rem;
+}
+.ltweets ul li
+{
+    color: rgb(177, 173, 173);
+}
+.ltweets ul li a
+{
+    margin-top: .5rem;
+    display: flex;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.ltweets ul li a:hover
+{
+    text-decoration: underline;
+}
+.ltweets_date
+{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-size:0.7rem;
+    color:rgb(129, 127, 127) ;
+
+}
+
+/* rigths */
+.rights
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    background-color: rgb(17, 17, 17);
+
+    width: 100%;
+    height:4rem;
+    font-size: .8rem;
+}
+.rights a:hover
+{
+    text-decoration: underline;
+}
+.theme
+{
+    margin-left: 1rem;
+}
+.theme span
+{
+    color:rgb(129, 127, 127) ;
+}
+.theme a
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.terms
+{
+    margin-right: 1rem;
+}
+.terms svg
+{
+    width: .9rem;
+    fill: whitesmoke;
+    margin-left: 1rem;
+}
+.terms a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: .5rem;
+}
+
+
